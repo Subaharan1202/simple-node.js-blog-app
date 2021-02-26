@@ -1,0 +1,15 @@
+<%- include('partials/header') %>
+
+
+<form action="/blog/<%=blog._id%>?method=put" method="post">
+<lable for="title">title</lable>
+<input id ="title" type="text" value="<%=blog.title%>" name="title">
+<lable for="imaage">image</lable>
+<input id ="imaage" type="text" value="<%=blog.imaage%>" name="image">
+<lable for="body">body</lable>
+<textarea id ="body" name="body"><%=blog.body%></textarea>
+ <button>submit</button>
+</form>
+
+
+<%- include('partials/footer') %>

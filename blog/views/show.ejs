@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+<div class="container">
+
+<div class="well">
+
+<div class="media">
+<h1 class="media-heading"> <%=blogs.title %></h1> 
+<p><%=blogs.created%></p>
+<img class ="img-responsive center-block " src="<%=blogs.imaage%>">
+</br>
+<div class="media-body">
+
+
+<p><%=blogs.body%></p>
+<a class="btn btn-primary" href="<%=blogs._id%>/edit">Edit</a>
+</div>
+
+</div>
+</div>
+</div>
+
+<%- include('partials/footer') %>

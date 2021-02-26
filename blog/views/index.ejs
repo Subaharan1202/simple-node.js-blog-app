@@ -1,0 +1,43 @@
+
+<%- include('partials/header') %>
+
+ <div class="container">
+  <header class="head">
+   <nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="/blog/new">add post</a>
+</nav>
+  </header>
+  
+  
+  
+  
+  
+     
+     
+     
+    <%  blogs.forEach(function(blog){ %>
+  
+       <div class="well">
+   
+       <div class="media">
+       
+       
+       <a class="pull-left">
+       <img class="media-object img-thumbnail" src="<%- blog.imaage %>" >
+       </a>
+       
+       <div class="media-body">
+       <h1 class="media-heading">   <%- blog.title %> </h1> 
+       <p> <%-blog.created%></p>
+      <p><%-blog.body.substring(0,300)%></p>
+      <a class="btn btn-primary" href="https://7da4a4ed828140889158a1d1ae910071.vfs.cloud9.us-east-2.amazonaws.com/blog/<%= blog._id %>">read more</a>
+    </div>
+    
+    </div>
+   </div>
+
+  <%  }); %>  
+
+
+</div>
+<%- include('partials/footer') %>
